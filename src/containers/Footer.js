@@ -2,7 +2,7 @@ import {useRef} from 'react';
 import {useState} from 'react';
 import './footer.css'
 
-const Footer = ({recipes, setRecipes}) => {
+const Footer = ({originDataSet, setOriginDataSet}) => {
     const inputNameRef = useRef();
     const inputIngredientsRef = useRef();
     const inputRatingRef = useRef();
@@ -20,7 +20,7 @@ const Footer = ({recipes, setRecipes}) => {
         };
 
         
-        setRecipes(prevRecipes => [...prevRecipes, newRecipe]);
+        setOriginDataSet(prevRecipes => [...prevRecipes, newRecipe]);
         
         console.log(newRecipe);
 
