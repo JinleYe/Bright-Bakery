@@ -1,0 +1,43 @@
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EFEFEF;
+
+    /* bottom-shadow of the nav part, from google  */
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list > li{
+    padding:20px;
+    font-size:20px;    
+}
+
+.nav-search{
+    height: 20px;
+    border:none;
+    background-color:#EFEFEF;
+    border-bottom: 1px solid rgb(101, 101, 101);
+}
+
+.nav-search-button{
+    font-size:20px;
+    background-color: #EFEFEF;
+    border:none;
+
+}
+
+.nav-search-button:hover{
+    background-color:#023C40;
+}
+
+
+

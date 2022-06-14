@@ -1,4 +1,5 @@
 import IngredientList from "./IngredientList";
+import './recipe.css';
 
 const Recipe = ({recipe}) => {
 

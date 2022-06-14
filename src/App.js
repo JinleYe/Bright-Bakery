@@ -4,6 +4,7 @@ import Header from './containers/Header';
 import MainContent from './containers/MainContent';
 import Footer from './containers/Footer';
 import {useState} from "react";
+import './containers/header.css';
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header recipes={recipes} setRecipes={setRecipes}/>
       <MainContent recipes={recipes} setRecipes={setRecipes}/>
       <Footer recipes={recipes} setRecipes={setRecipes} />
       
