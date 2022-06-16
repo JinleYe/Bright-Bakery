@@ -30,9 +30,11 @@ const Footer = ({originDataSet, setOriginDataSet}) => {
         <>
             <form className="add-new-recipe-form">  
                 <h2>Add New Recipe</h2>
-                <p>Recipe Name <input ref={inputNameRef} type="text" required={true} /></p>
-                <p>Recipe Ingredients <input ref={inputIngredientsRef} type="text" required={true} /></p>
-                <p>Recipe Rating <input ref={inputRatingRef} type="number" min="1" max="5" required={true} /></p>
+                <table>
+                <tr><td><p>Recipe Name</p></td><td><input ref={inputNameRef} type="text" required={true} /></td></tr>
+                <tr><td><p>Recipe Ingredients</p></td><td><input ref={inputIngredientsRef} type="text" required={true} /></td></tr>
+                <tr><td><p>Recipe Rating</p></td> <td><input ref={inputRatingRef} type="number" min="1" max="5" required={true} /></td></tr>
+                </table>
                 <button onClick={handleAddNewRecipe}>Submit</button>
             </form>
         

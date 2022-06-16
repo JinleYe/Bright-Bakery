@@ -1,3 +1,11 @@
 .add-new-recipe-form{
     background-color:#508991;
+   
+}
+
+
+
+.add-new-recipe-form > tr > td{
+    padding-left:5px;
+    
 }
